@@ -1,0 +1,1128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+<!-- META PIXEL -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+
+fbq('init', '1062324646603145');
+fbq('track', 'PageView');
+</script>
+
+<noscript>
+<img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1062324646603145&ev=PageView&noscript=1"/>
+</noscript>
+<!-- END META PIXEL -->
+
+<title>HAFIZ SHAKIL — King of Nifty</title>
+
+<meta name="description" content="Join King of Nifty by HAFIZ SHAKIL for free daily analysis, Nifty & BankNifty levels, and expert stock market education.">
+
+<meta property="og:title" content="KING OF NIFTY - HAFIZ SHAKIL">
+<meta property="og:description" content="Join 50,000+ traders for FREE daily calls.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Manrope:wght@500;600;700;800&family=Noto+Nastaliq+Urdu:wght@500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+
+:root{
+  --emerald:#0f8a5c;
+  --emerald-deep:#0a5c3d;
+  --emerald-bright:#2fe6a8;
+  --gold:#f0c14b;
+  --gold-bright:#ffe08a;
+  --gold-deep:#b0862a;
+  --ink:#f2fbf6;
+  --ink-soft:#a9c4b6;
+  --bg:#04120c;
+  --card:rgba(10,26,19,.78);
+  --border:rgba(240,193,75,.28);
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  -webkit-tap-highlight-color:transparent;
+}
+
+body{
+  min-height:100vh;
+  min-height:100dvh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:24px 16px 116px;
+  color:var(--ink);
+  font-family:'Manrope',system-ui,sans-serif;
+  background:var(--bg);
+  overflow-x:hidden;
+  position:relative;
+}
+
+.urdu{
+  font-family:'Noto Nastaliq Urdu',serif;
+  line-height:2;
+}
+
+.aurora{
+  position:fixed;
+  inset:0;
+  z-index:-3;
+  background:var(--bg);
+}
+
+.aurora span{
+  position:absolute;
+  border-radius:50%;
+  filter:blur(100px);
+  opacity:.30;
+  animation:drift 18s ease-in-out infinite alternate;
+}
+
+.aurora .a1{
+  width:360px;
+  height:360px;
+  background:var(--emerald);
+  top:-120px;
+  left:-100px;
+}
+
+.aurora .a2{
+  width:300px;
+  height:300px;
+  background:var(--gold);
+  bottom:-120px;
+  right:-100px;
+  opacity:.16;
+  animation-delay:-8s;
+}
+
+@keyframes drift{
+  0%{
+    transform:translate(0,0) scale(1);
+  }
+  100%{
+    transform:translate(24px,-28px) scale(1.1);
+  }
+}
+
+.lattice{
+  position:fixed;
+  inset:0;
+  z-index:-2;
+  opacity:.05;
+  pointer-events:none;
+
+  background-image:
+    linear-gradient(45deg,var(--gold) 1px,transparent 1px),
+    linear-gradient(-45deg,var(--gold) 1px,transparent 1px);
+
+  background-size:38px 38px;
+}
+
+.wrapper{
+  width:100%;
+  max-width:440px;
+  position:relative;
+  z-index:1;
+}
+
+.card{
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:26px;
+
+  padding:clamp(26px,6vw,38px)
+          clamp(20px,5vw,30px);
+
+  backdrop-filter:blur(24px);
+  -webkit-backdrop-filter:blur(24px);
+
+  box-shadow:
+    0 45px 90px rgba(0,0,0,.6),
+    inset 0 1px 0 rgba(255,255,255,.06);
+
+  text-align:center;
+  position:relative;
+  overflow:hidden;
+
+  animation:cardIn .7s cubic-bezier(.22,1,.36,1) both;
+}
+
+@keyframes cardIn{
+  from{
+    opacity:0;
+    transform:translateY(18px);
+  }
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+
+.card::before{
+  content:"";
+  position:absolute;
+  top:-2px;
+  left:-2px;
+  right:-2px;
+  height:3px;
+
+  background:
+    linear-gradient(
+      90deg,
+      transparent,
+      var(--gold),
+      var(--emerald-bright),
+      var(--gold),
+      transparent
+    );
+
+  opacity:.9;
+}
+
+.live-badge{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+
+  margin:0 auto 20px;
+
+  padding:7px 16px;
+
+  border-radius:999px;
+
+  background:rgba(47,230,168,.1);
+
+  border:1px solid rgba(47,230,168,.4);
+
+  color:var(--emerald-bright);
+
+  font-weight:700;
+  font-size:11.5px;
+  letter-spacing:.3px;
+
+  animation:fadeUp .6s .05s both;
+}
+
+.live-badge .dot{
+  width:6px;
+  height:6px;
+  border-radius:50%;
+  background:var(--emerald-bright);
+  animation:blink 1.2s infinite;
+}
+
+@keyframes blink{
+  50%{
+    opacity:.25;
+  }
+}
+
+.logo-wrap{
+  position:relative;
+  display:inline-block;
+  margin-bottom:16px;
+  animation:fadeUp .6s .1s both;
+}
+
+.logo-ring{
+  width:114px;
+  height:114px;
+  border-radius:50%;
+  padding:4px;
+
+  background:
+    conic-gradient(
+      from 180deg,
+      var(--gold),
+      var(--emerald-bright),
+      var(--gold-deep),
+      var(--gold)
+    );
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  animation:spin 10s linear infinite;
+
+  box-shadow:
+    0 18px 42px rgba(240,193,75,.28);
+}
+
+@keyframes spin{
+  to{
+    transform:rotate(360deg);
+  }
+}
+
+.logo-inner{
+  width:100%;
+  height:100%;
+  border-radius:50%;
+  background:#06170f;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  overflow:hidden;
+
+  border:3px solid var(--bg);
+}
+
+.logo-inner img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+}
+
+.check-badge{
+  position:absolute;
+  bottom:-2px;
+  right:-4px;
+
+  width:32px;
+  height:32px;
+
+  border-radius:50%;
+
+  background:
+    linear-gradient(
+      135deg,
+      var(--gold-bright),
+      var(--gold-deep)
+    );
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  font-size:13px;
+  color:#1a1206;
+
+  border:3px solid var(--bg);
+
+  box-shadow:
+    0 6px 16px rgba(240,193,75,.5);
+}
+
+h1{
+  font-family:'Cinzel',serif;
+  font-weight:800;
+
+  font-size:clamp(22px,5.8vw,27px);
+
+  letter-spacing:.03em;
+  line-height:1.25;
+
+  margin-bottom:6px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #fff,
+      var(--gold-bright) 45%,
+      var(--gold) 75%,
+      var(--gold-deep)
+    );
+
+  -webkit-background-clip:text;
+  background-clip:text;
+  color:transparent;
+
+  animation:fadeUp .6s .15s both;
+}
+
+.subline-urdu{
+  font-size:16px;
+  color:var(--emerald-bright);
+  font-weight:600;
+  margin-bottom:12px;
+  animation:fadeUp .6s .2s both;
+}
+
+.rating{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:6px;
+
+  margin-bottom:20px;
+
+  font-size:12.5px;
+  color:var(--ink-soft);
+
+  animation:fadeUp .6s .22s both;
+}
+
+.rating .stars{
+  color:var(--gold);
+  letter-spacing:1px;
+}
+
+.stats{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:8px;
+
+  background:rgba(240,193,75,.06);
+
+  border:1px solid var(--border);
+  border-radius:16px;
+
+  padding:15px 8px;
+
+  margin-bottom:20px;
+
+  animation:fadeUp .6s .25s both;
+}
+
+.stats-item{
+  font-size:11px;
+  font-weight:600;
+  line-height:1.35;
+  color:var(--ink-soft);
+}
+
+.stats-item .num{
+  display:block;
+  font-weight:800;
+  color:var(--ink);
+
+  font-family:'Cinzel',serif;
+
+  font-size:14px;
+
+  margin-bottom:2px;
+}
+
+.pitch{
+  font-size:15.5px;
+  font-weight:700;
+  line-height:1.6;
+
+  margin-bottom:8px;
+
+  color:var(--ink);
+
+  animation:fadeUp .6s .28s both;
+}
+
+.pitch span{
+  color:var(--gold);
+}
+
+.pitch-urdu{
+  font-size:15px;
+  color:var(--ink-soft);
+
+  margin-bottom:20px;
+
+  line-height:2;
+
+  animation:fadeUp .6s .3s both;
+}
+
+.btn{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+
+  width:100%;
+
+  padding:17px;
+
+  border-radius:16px;
+
+  text-decoration:none;
+
+  color:#04170e;
+
+  font-size:15px;
+  font-weight:800;
+
+  font-family:'Manrope',sans-serif;
+
+  letter-spacing:.01em;
+
+  background:
+    linear-gradient(
+      135deg,
+      var(--gold-bright),
+      var(--gold) 45%,
+      var(--gold-deep)
+    );
+
+  box-shadow:
+    0 14px 34px rgba(240,193,75,.32),
+    inset 0 1px 0 rgba(255,255,255,.5);
+
+  position:relative;
+  overflow:hidden;
+
+  border:1px solid rgba(255,255,255,.3);
+
+  transition:
+    transform .25s ease,
+    box-shadow .25s ease;
+
+  cursor:pointer;
+
+  margin-bottom:14px;
+}
+
+.btn:hover{
+  transform:translateY(-3px);
+
+  box-shadow:
+    0 18px 40px rgba(240,193,75,.45);
+}
+
+.btn::after{
+  content:"";
+
+  position:absolute;
+
+  top:0;
+  left:-120%;
+
+  width:60%;
+  height:100%;
+
+  background:
+    linear-gradient(
+      90deg,
+      transparent,
+      rgba(255,255,255,.6),
+      transparent
+    );
+
+  transform:skewX(-20deg);
+
+  animation:shine 3s infinite;
+
+  pointer-events:none;
+}
+
+@keyframes shine{
+  0%{
+    left:-120%;
+  }
+
+  55%,100%{
+    left:140%;
+  }
+}
+
+.btn-secondary{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+
+  width:100%;
+
+  padding:15px;
+
+  border-radius:16px;
+
+  text-decoration:none;
+
+  color:var(--emerald-bright);
+
+  font-size:14px;
+  font-weight:700;
+
+  font-family:'Manrope',sans-serif;
+
+  border:1.5px solid rgba(47,230,168,.4);
+
+  background:rgba(47,230,168,.06);
+
+  cursor:pointer;
+
+  margin-bottom:20px;
+
+  transition:
+    transform .2s ease,
+    background .2s ease;
+}
+
+.btn-secondary:hover{
+  transform:translateY(-2px);
+  background:rgba(47,230,168,.12);
+}
+
+.urgency-line{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+
+  background:rgba(240,193,75,.08);
+
+  border:1px solid rgba(240,193,75,.3);
+
+  border-radius:12px;
+
+  padding:9px 14px;
+
+  margin-bottom:20px;
+
+  font-size:12.5px;
+  font-weight:700;
+
+  color:var(--gold);
+
+  animation:fadeUp .6s .32s both;
+}
+
+.features{
+  margin-bottom:20px;
+  animation:fadeUp .6s .36s both;
+}
+
+.feat{
+  display:flex;
+  align-items:center;
+  gap:12px;
+
+  background:rgba(255,255,255,.03);
+
+  border:1px solid rgba(255,255,255,.08);
+
+  border-radius:14px;
+
+  padding:13px 16px;
+
+  margin-bottom:8px;
+}
+
+.feat-icon{
+  width:34px;
+  height:34px;
+  min-width:34px;
+
+  border-radius:10px;
+
+  background:rgba(240,193,75,.1);
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  font-size:15px;
+}
+
+.feat-text{
+  font-size:13px;
+  font-weight:600;
+
+  color:var(--ink-soft);
+
+  text-align:left;
+}
+
+.trust-line{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:6px;
+
+  margin-bottom:20px;
+
+  font-size:12px;
+  color:var(--ink-soft);
+
+  animation:fadeUp .6s .4s both;
+}
+
+.trust-line b{
+  color:var(--emerald-bright);
+}
+
+@keyframes fadeUp{
+  from{
+    opacity:0;
+    transform:translateY(10px);
+  }
+
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+
+.disclaimer-wrap{
+  margin-top:6px;
+  text-align:center;
+}
+
+.credit{
+  padding-top:14px;
+
+  border-top:1px solid rgba(255,255,255,.08);
+}
+
+.credit p{
+  font-weight:700;
+  margin-bottom:8px;
+
+  font-size:10px;
+
+  color:var(--ink-soft);
+
+  letter-spacing:.03em;
+
+  text-transform:uppercase;
+}
+
+.credit a{
+  display:inline-block;
+
+  background:#229ED9;
+
+  color:#fff;
+
+  padding:7px 16px;
+
+  border-radius:8px;
+
+  text-decoration:none;
+
+  font-weight:600;
+
+  font-size:11.5px;
+
+  font-family:'Manrope',sans-serif;
+}
+
+.disclaimer{
+  margin-top:16px;
+
+  font-size:11px;
+
+  line-height:2;
+
+  color:#6f8a7c;
+
+  padding:0 6px;
+}
+
+.sticky-cta{
+  position:fixed;
+
+  bottom:0;
+  left:0;
+
+  width:100%;
+
+  z-index:999;
+
+  padding:
+    13px
+    15px
+    calc(13px + env(safe-area-inset-bottom));
+
+  background:
+    linear-gradient(
+      180deg,
+      transparent,
+      rgba(4,18,12,.94) 35%
+    );
+
+  display:flex;
+  justify-content:center;
+}
+
+.sticky-cta a{
+  position:relative;
+
+  width:100%;
+  max-width:440px;
+
+  overflow:hidden;
+
+  background:
+    linear-gradient(
+      135deg,
+      var(--gold-bright),
+      var(--gold) 45%,
+      var(--gold-deep)
+    );
+
+  padding:15px 18px;
+
+  border-radius:15px;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:9px;
+
+  text-decoration:none;
+
+  color:#04170e;
+
+  font-weight:800;
+  font-size:14.5px;
+
+  font-family:'Manrope',sans-serif;
+
+  box-shadow:
+    0 14px 30px rgba(0,0,0,.5);
+
+  border:1px solid rgba(255,255,255,.3);
+}
+
+@media(max-width:380px){
+
+  .card{
+    padding:22px 16px;
+  }
+
+  .logo-ring{
+    width:98px;
+    height:98px;
+  }
+
+  h1{
+    font-size:20px;
+  }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="aurora">
+  <span class="a1"></span>
+  <span class="a2"></span>
+</div>
+
+<div class="lattice"></div>
+
+<div class="wrapper">
+
+<div class="card">
+
+<div class="live-badge">
+  <span class="dot"></span>
+  5,947 traders online now
+</div>
+
+<div class="logo-wrap">
+
+<div class="logo-ring">
+
+<div class="logo-inner">
+
+<img
+src="hafiz.jpg"
+alt="Hafiz Shakil"
+>
+
+</div>
+
+</div>
+
+<div class="check-badge">
+<i class="fas fa-check"></i>
+</div>
+
+</div>
+
+<h1>HAFIZ SHAKIL</h1>
+
+<div class="subline-urdu urdu" dir="rtl">
+🏆 ہندوستان کا نمبر 1 اسٹاک مارکیٹ چینل
+</div>
+
+<div class="rating">
+<span class="stars">★★★★★</span>
+4.9/5 (2,440 reviews)
+</div>
+
+<div class="stats">
+
+<div class="stats-item">
+<span class="num">50K+</span>
+Members
+</div>
+
+<div class="stats-item">
+<span class="num">5+ Yrs</span>
+Experience
+</div>
+
+<div class="stats-item">
+<span class="num">95%</span>
+Accuracy
+</div>
+
+</div>
+
+<a
+href="https://t.me/+uHgTaOSc-r42YjU1"
+class="btn telegram-link"
+target="_blank"
+rel="noopener"
+data-location="top"
+>
+
+<i class="fab fa-telegram" style="font-size:17px;"></i>
+
+Join Free Telegram Channel
+
+</a>
+
+<p class="pitch">
+
+Get <span>FREE daily calls</span>
+for NIFTY, BANKNIFTY & SENSEX
+
+</p>
+
+<p class="pitch-urdu urdu" dir="rtl">
+
+روزانہ مفت پریمیم تجزیہ حاصل کرنے والے ہزاروں تاجروں میں شامل ہوں۔
+
+</p>
+
+<div class="urgency-line">
+
+🔥
+<span id="countTxt">30</span>s
+—
+محدود مفت رسائی!
+
+</div>
+
+<a
+href="https://t.me/+uHgTaOSc-r42YjU1"
+class="btn telegram-link"
+target="_blank"
+rel="noopener"
+data-location="middle"
+>
+
+<i class="fab fa-telegram" style="font-size:17px;"></i>
+
+Join Free Telegram Channel
+
+</a>
+
+<div class="features">
+
+<div class="feat">
+
+<div class="feat-icon">📊</div>
+
+<span class="feat-text">
+Daily Nifty & BankNifty Levels
+</span>
+
+</div>
+
+<div class="feat">
+
+<div class="feat-icon">🎓</div>
+
+<span class="feat-text">
+No Paid Tips – Purely Educational
+</span>
+
+</div>
+
+<div class="feat">
+
+<div class="feat-icon">⏳</div>
+
+<span class="feat-text">
+5+ Years of Market Experience
+</span>
+
+</div>
+
+<div class="feat">
+
+<div class="feat-icon">👥</div>
+
+<span class="feat-text">
+50,000+ Subscribers Trust Us
+</span>
+
+</div>
+
+</div>
+
+<div class="trust-line">
+
+✅
+<b>Verified Channel</b>
+•
+Free Forever
+•
+No Spam
+
+</div>
+
+<a
+href="https://t.me/+uHgTaOSc-r42YjU1"
+class="btn-secondary telegram-link"
+target="_blank"
+rel="noopener"
+data-location="bottom"
+>
+
+<i class="fab fa-telegram"></i>
+
+Join Now — It's 100% FREE
+
+</a>
+
+</div>
+
+<div class="disclaimer-wrap">
+
+<div class="credit">
+
+<p>
+Advertised by : SRS Marketing Agency
+</p>
+
+<a
+href="https://t.me/srsagency"
+target="_blank"
+rel="noopener"
+>
+
+📩 Visit @ SRS Marketing
+
+</a>
+
+</div>
+
+<div class="disclaimer urdu" dir="rtl">
+
+<strong>Disclaimer:</strong>
+
+یہ چینل صرف تعلیمی اور معلوماتی مقاصد کے لیے ہے۔
+ہم سرمایہ کاری کے مشورے یا گارنٹی شدہ واپسی فراہم نہیں کرتے ہیں۔
+اسٹاک مارکیٹ میں تجارت میں خطرہ شامل ہے۔
+براہ کرم کوئی بھی سرمایہ کاری کا فیصلہ کرنے سے پہلے اپنے مالیاتی مشیر سے مشورہ کریں۔
+
+</div>
+
+</div>
+
+</div>
+
+<div class="sticky-cta">
+
+<a
+href="https://t.me/+uHgTaOSc-r42YjU1"
+id="telegramBtnSticky"
+target="_blank"
+rel="noopener"
+>
+
+<i class="fab fa-telegram" style="font-size:17px;"></i>
+
+<span>
+Join Free Telegram Channel
+</span>
+
+</a>
+
+</div>
+
+<script>
+
+/* TELEGRAM LINK */
+
+const TELEGRAM_LINK =
+"https://t.me/+uHgTaOSc-r42YjU1";
+
+
+/* META PIXEL CLICK TRACKING */
+
+document
+.querySelectorAll('.telegram-link, #telegramBtnSticky')
+.forEach(function(button){
+
+button.addEventListener('click',function(){
+
+if(typeof fbq !== 'undefined'){
+
+fbq(
+'track',
+'Lead',
+{
+content_name:'Hafiz Shakil Telegram Community',
+value:'0.00',
+currency:'INR'
+}
+);
+
+}
+
+});
+
+});
+
+
+/* COUNTDOWN */
+
+let time = 30;
+
+const countTxt =
+document.getElementById('countTxt');
+
+const countdown =
+setInterval(function(){
+
+time--;
+
+if(countTxt){
+countTxt.textContent = time;
+}
+
+if(time <= 0){
+
+clearInterval(countdown);
+
+if(countTxt){
+countTxt.textContent = '0';
+}
+
+}
+
+},1000);
+
+</script>
+
+</body>
+</html>
